@@ -2,4 +2,69 @@
   display: flex;
   flex-direction: column-reverse;
 }
-cmp-teaser__content
+
+.cmp-teaser--category .cmp-teaser .cmp-teaser__content {
+  float: none;
+}
+
+.cmp-teaser--category .cmp-teaser .cmp-teaser__content .cmp-teaser__action-container {
+  float: none;
+  margin: 0;
+}
+
+.cmp-teaser--category .cmp-teaser .cmp-teaser__content .cmp-teaser__action-container .cmp-teaser__action-link {
+  float: none;
+  background-color: transparent;
+  padding: 0;
+  text-align: center;
+  display: block;
+}
+
+.cmp-teaser--category .cmp-teaser .cmp-teaser__content .cmp-teaser__action-container .cmp-teaser__action-link:after {
+  content: " >";
+}
+
+.cmp-teaser--text-overlay .cmp-teaser {
+  position: relative;
+}
+
+.cmp-teaser--text-overlay .cmp-teaser .cmp-teaser__content {
+  position: absolute;
+  float: none;
+  text-align: center;
+  width: 100%;
+  padding-top: 15px;
+}
+
+.cmp-teaser--text-overlay .cmp-teaser .cmp-teaser__content .cmp-teaser__description h1, .cmp-teaser--text-overlay .cmp-teaser .cmp-teaser__content .cmp-teaser__description h2, .cmp-teaser--text-overlay .cmp-teaser .cmp-teaser__content .cmp-teaser__description h3, .cmp-teaser--text-overlay .cmp-teaser .cmp-teaser__content .cmp-teaser__description h4, .cmp-teaser--text-overlay .cmp-teaser .cmp-teaser__content .cmp-teaser__description h5, .cmp-teaser--text-overlay .cmp-teaser .cmp-teaser__content .cmp-teaser__description p, .cmp-teaser--text-overlay .cmp-teaser .cmp-teaser__content .cmp-teaser__description a {
+  color: #FFFFFF;
+  margin: 5px 5px;
+}
+
+.cmp-teaser--text-overlay .cmp-teaser .cmp-teaser__content .cmp-teaser__description p {
+  text-align: center;
+}
+
+.cmp-text--line-spacing-small .cmp-text p {
+  line-height: 1.5;
+  margin: 0px;
+}
+
+.cmp-text--line-spacing-small .cmp-text h1, .cmp-text--line-spacing-small .cmp-text h2, .cmp-text--line-spacing-small .cmp-text h3, .cmp-text--line-spacing-small .cmp-text h4, .cmp-text--line-spacing-small .cmp-text h5, .cmp-text--line-spacing-small .cmp-text h6 {
+  margin-top: 13.5px;
+}
+
+.cmp-button--block .cmp-button {
+  display: block;
+  width: 100%;
+  float: none;
+  font-size: 25px;
+  padding: 15px;
+  height: auto;
+  background-color: #f8e7bf;
+}
+
+.cmp-button--block .cmp-button .cmp-button__text {
+  padding: 0px;
+  float: none;
+}
