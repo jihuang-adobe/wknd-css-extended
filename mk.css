@@ -1,1 +1,5 @@
-
+.cmp-teaser--category .cmp-teaser {
+  display: flex;
+  flex-direction: column-reverse;
+}
+cmp-teaser__content
