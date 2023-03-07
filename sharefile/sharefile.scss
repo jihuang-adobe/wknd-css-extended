@@ -1,0 +1,106 @@
+.linkedin {
+    .cmp-contentfragment {
+        border: solid 2px #E8E8E8;
+        border-radius: 10px;
+
+        .cmp-contentfragment__title {
+            display: none;
+        }
+
+        .cmp-contentfragment__elements {
+            margin: 0;
+            position: relative;
+
+            .cmp-contentfragment__element {
+                .cmp-contentfragment__element-title {
+                    display: none;
+                }
+
+                .cmp-contentfragment__element-value {
+                    margin-inline-start: 0px;
+                }
+            }
+
+            .cmp-contentfragment__element--title {
+                .cmp-contentfragment__element-value {
+                    padding: 5px 10px;
+                }
+            }
+            
+            .cmp-contentfragment__element--teaserText {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                background-color: rgba(0,0,0,0.6);
+                color: #FFFFFF;
+
+                .cmp-contentfragment__element-value {
+                    padding: 10px;
+                    
+                    p {
+                        text-align: center;
+                        margin: 0px;
+                        line-height: 1.5;
+                    }
+                }
+            }
+
+            .cmp-contentfragment__element--articleText {
+                display: none;
+            }
+        }
+    }
+}
+
+.website {
+    .cmp-contentfragment {
+        .cmp-contentfragment__title {
+            display: none;
+        }
+
+        .cmp-contentfragment__elements {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+
+            .cmp-contentfragment__element {
+                display: flex;
+
+                .cmp-contentfragment__element-title {
+                    display: none;
+                }
+
+                .cmp-contentfragment__element-value {
+                    margin-inline-start: 0px;
+                }
+            }
+
+            .cmp-contentfragment__element--title {
+                order: 2;
+
+                .cmp-contentfragment__element-value {
+                    font-weight: 900;
+                }
+            }
+
+            .cmp-contentfragment__element--image {
+                order: 1;
+            }
+            
+            .cmp-contentfragment__element--teaserText {
+                order: 3;
+                .cmp-contentfragment__element-value {
+                    p {
+                        margin: 0px;
+                        line-height: 1.5;
+                        font-size: 13px;
+                    }
+                }
+            }
+
+            .cmp-contentfragment__element--articleText {
+                display: none;
+            }
+        }
+    }
+}
