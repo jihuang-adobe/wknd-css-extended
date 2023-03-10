@@ -156,7 +156,7 @@
             flex-flow: column;
             background-color: #005A8C;
             padding: 5px 15px;
-            color: white;
+            color: FFFFFF;
 
             .cmp-list__item-link {
                 float: none;
@@ -170,14 +170,15 @@
 
                 .cmp-list__item-date {
                     float: none;
+                    display: block;
                 }
+            }
 
-                .cmp-list__item-description {
-                    float: none;
-                    font-size: 13px;
-                    font-weight: 400;
-                    line-height: 1.3em;
-                }
+            .cmp-list__item-description {
+                float: none;
+                font-size: 13px;
+                font-weight: 400;
+                line-height: 1.3em;
             }
         }
     }
