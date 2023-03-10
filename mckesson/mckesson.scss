@@ -145,3 +145,40 @@
         }
     }
 }
+
+.cmp-list--news {
+    .cmp-list {
+        float: none;
+
+        .cmp-list__item {
+            float: none;
+            display: flex;
+            flex-flow: column;
+            background-color: #005A8C;
+            padding: 5px 15px;
+            color: white;
+
+            .cmp-list__item-link {
+                float: none;
+                padding: 0px;
+                color: #FFFFFF;
+                margin-bottom: 10px;
+
+                .cmp-list__item-title {
+                    float: none;
+                }
+
+                .cmp-list__item-date {
+                    float: none;
+                }
+
+                .cmp-list__item-description {
+                    float: none;
+                    font-size: 13px;
+                    font-weight: 400;
+                    line-height: 1.3em;
+                }
+            }
+        }
+    }
+}
