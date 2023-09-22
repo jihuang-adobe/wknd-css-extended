@@ -1,0 +1,75 @@
+.red.home-teaser .cmp-contentfragment {
+  border-top-color: red;
+}
+
+.blue.home-teaser .cmp-contentfragment {
+  border-top-color: blue;
+}
+
+.green.home-teaser .cmp-contentfragment {
+  border-top-color: green;
+}
+
+.home-teaser .cmp-contentfragment {
+  background-color: #FFFFFF;
+  margin-left: 3px;
+  margin-right: 3px;
+  padding: 10px 10px 0px 10px;
+  border-top: 8px solid;
+  border-radius: 5px;
+  box-shadow: 0 10px 20px 0 #393D3A;
+}
+.home-teaser .cmp-contentfragment .cmp-contentfragment__title {
+  display: none;
+}
+.home-teaser .cmp-contentfragment .cmp-contentfragment__elements .cmp-contentfragment__element-title {
+  display: none;
+}
+.home-teaser .cmp-contentfragment .cmp-contentfragment__elements .cmp-contentfragment__element-value {
+  margin-inline-start: 0px;
+}
+.home-teaser .cmp-contentfragment .cmp-contentfragment__elements .cmp-contentfragment__element--title {
+  font-size: 28px;
+  text-align: center;
+  margin: 10px 10px;
+}
+.home-teaser .cmp-contentfragment .cmp-contentfragment__elements .cmp-contentfragment__element--shortText {
+  font-size: 16px;
+  text-align: center;
+  line-height: 24px;
+  margin: 10px;
+}
+.home-teaser .cmp-contentfragment .cmp-contentfragment__elements .cmp-contentfragment__element--mainCtaLinkUrl {
+  display: none;
+}
+.home-teaser .cmp-contentfragment .cmp-contentfragment__elements .cmp-contentfragment__element--MainCtaLinkText, .home-teaser .cmp-contentfragment .cmp-contentfragment__elements .cmp-contentfragment__element--mainSubCtaLinkText {
+  background-color: #000000;
+  color: #FFFFFF;
+  text-align: center;
+  margin: 0px 25%;
+}
+.home-teaser .cmp-contentfragment .cmp-contentfragment__elements .cmp-contentfragment__element--MainCtaLinkText {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding-top: 8px;
+  font-size: 18px;
+}
+.home-teaser .cmp-contentfragment .cmp-contentfragment__elements .cmp-contentfragment__element--mainSubCtaLinkText {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding-bottom: 8px;
+  font-size: 12px;
+}
+.home-teaser .cmp-contentfragment .cmp-contentfragment__elements .cmp-contentfragment__element--secondaryCtaLinkUrl {
+  display: none;
+}
+.home-teaser .cmp-contentfragment .cmp-contentfragment__elements .cmp-contentfragment__element--secondaryCtaLinkText {
+  text-align: center;
+  margin: 12px 0px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #055393;
+}
+.home-teaser .cmp-contentfragment .cmp-contentfragment__elements .cmp-contentfragment__element--image img {
+  width: 100%;
+}/*# sourceMappingURL=intuit.css.map */

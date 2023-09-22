@@ -1,0 +1,33 @@
+.wknd-card .cmp-contentfragment {
+  background-color: #FFFFFF;
+  margin-left: 3px;
+  margin-right: 3px;
+  padding: 10px 10px 0px 10px;
+  border-top: 8px solid;
+  border-radius: 5px;
+  box-shadow: 0 10px 20px 0 #393D3A;
+}
+.wknd-card .cmp-contentfragment .cmp-contentfragment__title {
+  display: none;
+}
+.wknd-card .cmp-contentfragment .cmp-contentfragment__elements .cmp-contentfragment__element-title {
+  display: none;
+}
+.wknd-card .cmp-contentfragment .cmp-contentfragment__elements .cmp-contentfragment__element-value {
+  margin-inline-start: 0px;
+}
+.wknd-card .cmp-contentfragment .cmp-contentfragment__elements .cmp-contentfragment__element--title {
+  font-size: 28px;
+  text-align: center;
+  margin: 10px 10px;
+}
+.wknd-card .cmp-contentfragment .cmp-contentfragment__elements .cmp-contentfragment__element--description {
+  height: 200px;
+  overflow: hidden;
+}
+.wknd-card .cmp-contentfragment .cmp-contentfragment__elements .cmp-contentfragment__element--description p {
+  line-height: 1.5;
+}
+.wknd-card .cmp-contentfragment .cmp-contentfragment__elements .cmp-contentfragment__element--image img {
+  width: 100%;
+}/*# sourceMappingURL=wknd-cf.css.map */
