@@ -1,0 +1,32 @@
+.standard .cmp-breadcrumb__item a {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.standard .cmp-breadcrumb__item > span {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.title .cmp-title__text {
+  color: #0078d2;
+}
+
+.text .cmp-text {
+  color: #36495a;
+}
+.text .cmp-text a {
+  color: #0078d2;
+}
+.text .cmp-text h2 {
+  color: #00467f;
+  font-size: 2.14286rem;
+  line-height: 36px;
+}
+.text .cmp-text p {
+  margin-bottom: 10px;
+}
+.text .cmp-text ul, .text .cmp-text ol {
+  padding: 0px 15px;
+  margin: 0px;
+  line-height: 2;
+}
