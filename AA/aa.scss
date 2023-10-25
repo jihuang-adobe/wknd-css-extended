@@ -19,9 +19,10 @@
   }
 }
 
-.text {
-  .cmp-text {
+.text, .cmp-contentfragment__element {
+  .cmp-text, .cmp-contentfragment__element-value {
     color: #36495a;
+    margin-inline-start: 0px;
 
     a {
       color: #0078d2;
@@ -41,6 +42,30 @@
       padding: 0px 15px;
       margin: 0px;
       line-height: 2;
+    }
+  }
+}
+
+.contentfragment {
+  .cmp-contentfragment {
+    margin: 0.75rem 0 0;
+
+    .cmp-contentfragment__title {
+      color: #00467f;
+      font-size: 2.14286rem;
+      line-height: 36px;
+    }
+
+    .cmp-contentfragment__elements {
+      .cmp-contentfragment__element {
+        .cmp-contentfragment__element-title {
+          display: none;
+        }
+      }
+
+      .cmp-contentfragment__element--title {
+        display: none;
+      }
     }
   }
 }
