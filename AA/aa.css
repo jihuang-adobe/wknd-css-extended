@@ -46,3 +46,8 @@
 .contentfragment .cmp-contentfragment .cmp-contentfragment__elements .cmp-contentfragment__element--title {
   display: none;
 }
+
+.contentfragment.quote .cmp-contentfragment {
+  margin: 0.75rem 0.75rem;
+  background-color: lightgray;
+}
