@@ -2,3 +2,7 @@
   margin-left: 10px;
   margin-right: 10px;
 }
+
+.line-height-normal.text .cmp-text p {
+  line-height: normal;
+}

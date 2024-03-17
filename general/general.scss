@@ -4,3 +4,11 @@
         margin-right: 10px;
     }
 }
+
+.line-height-normal.text {
+    .cmp-text {
+        p {
+            line-height: normal;
+        }
+    }
+}
