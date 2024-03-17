@@ -48,6 +48,6 @@
 }
 
 .contentfragment.quote .cmp-contentfragment {
-  padding: 0.75rem;
-  background-color: #E5E4E2;
+  margin: 0.75rem 0.75rem;
+  background-color: lightgray;
 }
