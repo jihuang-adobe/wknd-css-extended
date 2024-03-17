@@ -6,3 +6,7 @@
 .line-height-normal.text .cmp-text p {
   line-height: normal;
 }
+
+.text-color-white.text .cmp-text p {
+  color: white;
+}
