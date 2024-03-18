@@ -5,7 +5,8 @@
     }
 }
 
-.line-height-normal.text {
+.line-height-normal {
+    .cmp-contentfragment,
     .cmp-text {
         p {
             line-height: normal;

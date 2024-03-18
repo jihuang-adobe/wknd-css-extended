@@ -3,7 +3,8 @@
   margin-right: 10px;
 }
 
-.line-height-normal.text .cmp-text p {
+.line-height-normal .cmp-contentfragment p,
+.line-height-normal .cmp-text p {
   line-height: normal;
 }
 
