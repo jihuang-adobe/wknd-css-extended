@@ -32,3 +32,15 @@
         }
     }
 }
+
+.text-alignment-center {
+    .cmp-contentfragment,
+    .cmp-text {
+        p,
+        ul,
+        h2,
+        h3 {
+            text-align: center;
+        }
+    }
+}

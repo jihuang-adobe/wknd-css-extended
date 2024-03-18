@@ -23,3 +23,14 @@
 .text-color-white .cmp-text h3 {
   color: white;
 }
+
+.text-alignment-center .cmp-contentfragment p,
+.text-alignment-center .cmp-contentfragment ul,
+.text-alignment-center .cmp-contentfragment h2,
+.text-alignment-center .cmp-contentfragment h3,
+.text-alignment-center .cmp-text p,
+.text-alignment-center .cmp-text ul,
+.text-alignment-center .cmp-text h2,
+.text-alignment-center .cmp-text h3 {
+  text-align: center;
+}
