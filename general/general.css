@@ -3,6 +3,11 @@
   margin-right: 10px;
 }
 
+.side-padding.container .cmp-container {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 .line-height-normal .cmp-contentfragment p,
 .line-height-normal .cmp-text p {
   line-height: normal;
