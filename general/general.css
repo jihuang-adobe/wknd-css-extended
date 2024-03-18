@@ -13,6 +13,7 @@
   line-height: normal;
 }
 
-.text-color-white.text .cmp-text p {
+.text-color-white .cmp-contentfragment p,
+.text-color-white .cmp-text p {
   color: white;
 }
