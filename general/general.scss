@@ -24,7 +24,10 @@
 .text-color-white {
     .cmp-contentfragment,
     .cmp-text {
-        p {
+        p,
+        ul,
+        h2,
+        h3 {
             color: white;
         }
     }

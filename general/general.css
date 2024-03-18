@@ -14,6 +14,12 @@
 }
 
 .text-color-white .cmp-contentfragment p,
-.text-color-white .cmp-text p {
+.text-color-white .cmp-contentfragment ul,
+.text-color-white .cmp-contentfragment h2,
+.text-color-white .cmp-contentfragment h3,
+.text-color-white .cmp-text p,
+.text-color-white .cmp-text ul,
+.text-color-white .cmp-text h2,
+.text-color-white .cmp-text h3 {
   color: white;
 }
