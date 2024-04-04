@@ -3,7 +3,7 @@
   margin-right: 10px;
 }
 
-.comp-container-vertical-center.container .cmp-container {
+.comp-container-vertical-center.container .cmp-container > div {
   display: flex;
   align-items: center;
 }

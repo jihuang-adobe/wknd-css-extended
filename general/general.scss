@@ -7,8 +7,10 @@
 
 .comp-container-vertical-center.container {
     .cmp-container {
-        display: flex;
-        align-items: center;
+        & > div {
+            display: flex;
+            align-items: center;
+        }
     }
 }
 
