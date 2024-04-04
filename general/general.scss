@@ -1,5 +1,12 @@
 .side-margin.container {
     .cmp-container {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.comp-container-vertical-center.container {
+    .cmp-container {
         margin-left: 10px;
         margin-right: 10px;
     }
