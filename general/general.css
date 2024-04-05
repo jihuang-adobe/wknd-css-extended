@@ -117,5 +117,5 @@
   margin-top: 7px;
 }
 .cmp-content-fragment-content-only.contentfragment .cmp-contentfragment .cmp-contentfragment__elements .cmp-contentfragment__element .cmp-contentfragment__element-value p {
-  line-height: 1;
+  line-height: normal;
 }
