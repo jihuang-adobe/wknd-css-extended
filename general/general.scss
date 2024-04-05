@@ -131,3 +131,21 @@
         }
     }
 }
+
+.cmp-content-fragment-content-only.contentfragment {
+    .cmp-contentfragment {
+        .cmp-contentfragment__element {
+            .cmp-contentfragment__element-title {
+                display: none;
+            }
+            .cmp-contentfragment__element-value {
+                margin-inline-start: 0px;
+                margin-bottom: 15px;
+
+                p {
+                    line-height: 1;
+                }
+            }
+        }
+    }
+}

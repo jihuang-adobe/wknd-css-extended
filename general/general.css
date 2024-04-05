@@ -95,3 +95,14 @@
 .cmp-teaser--article.teaser .cmp-teaser .cmp-teaser__image {
   max-width: 210px;
 }
+
+.cmp-content-fragment-content-only.contentfragment .cmp-contentfragment .cmp-contentfragment__element .cmp-contentfragment__element-title {
+  display: none;
+}
+.cmp-content-fragment-content-only.contentfragment .cmp-contentfragment .cmp-contentfragment__element .cmp-contentfragment__element-value {
+  margin-inline-start: 0px;
+  margin-bottom: 15px;
+}
+.cmp-content-fragment-content-only.contentfragment .cmp-contentfragment .cmp-contentfragment__element .cmp-contentfragment__element-value p {
+  line-height: 1;
+}
