@@ -134,16 +134,34 @@
 
 .cmp-content-fragment-content-only.contentfragment {
     .cmp-contentfragment {
-        .cmp-contentfragment__element {
-            .cmp-contentfragment__element-title {
-                display: none;
-            }
-            .cmp-contentfragment__element-value {
-                margin-inline-start: 0px;
-                margin-bottom: 15px;
+        .cmp-contentfragment__elements {
+            margin-block-start: 5px;
 
-                p {
-                    line-height: 1;
+            .cmp-contentfragment__element--title {
+                .cmp-contentfragment__element-value {
+                    font-size: 24px;
+                    font-weight: 400;
+                    margin-bottom: 13.5px;
+                    margin-top: 27px;
+                }
+            }
+
+            .cmp-contentfragment__element {
+                .cmp-contentfragment__element-title {
+                    display: none;
+                }
+                .cmp-contentfragment__element-value {
+                    margin-inline-start: 0px;
+                    margin-bottom: 15px;
+
+                    img {
+                        margin-bottom: 7px;
+                        margin-top: 7px;
+                    }
+    
+                    p {
+                        line-height: 1;
+                    }
                 }
             }
         }
