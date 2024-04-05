@@ -66,3 +66,10 @@
   display: inline-block;
   white-space: normal;
 }
+
+.cmp-image-list-title-list.image-list .cmp-image-list .cmp-image-list__item .cmp-image-list__item-content .cmp-image-list__item-image-link {
+  display: none;
+}
+.cmp-image-list-title-list.image-list .cmp-image-list .cmp-image-list__item .cmp-image-list__item-content .cmp-image-list__item-description {
+  display: none;
+}
