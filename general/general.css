@@ -73,3 +73,25 @@
 .cmp-image-list-title-list.image-list .cmp-image-list .cmp-image-list__item .cmp-image-list__item-content .cmp-image-list__item-description {
   display: none;
 }
+
+.cmp-teaser--article.teaser .cmp-teaser {
+  display: flex;
+}
+.cmp-teaser--article.teaser .cmp-teaser .cmp-teaser__content {
+  order: 1;
+  margin: 5px 10px;
+}
+.cmp-teaser--article.teaser .cmp-teaser .cmp-teaser__content .cmp-teaser__title {
+  line-height: 1;
+  margin: 0px;
+  font-size: 26px;
+}
+.cmp-teaser--article.teaser .cmp-teaser .cmp-teaser__content .cmp-teaser__description {
+  margin-top: 15px;
+}
+.cmp-teaser--article.teaser .cmp-teaser .cmp-teaser__content .cmp-teaser__description p {
+  line-height: 1;
+}
+.cmp-teaser--article.teaser .cmp-teaser .cmp-teaser__content .cmp-teaser__image {
+  width: 50%;
+}

@@ -102,3 +102,32 @@
         }
     }
 }
+
+.cmp-teaser--article.teaser {
+    .cmp-teaser {
+        display: flex;
+
+        .cmp-teaser__content {
+            order: 1;
+            margin: 5px 10px;
+
+            .cmp-teaser__title {
+                line-height: 1;
+                margin: 0px;
+                font-size: 26px;
+            }
+
+            .cmp-teaser__description {
+                margin-top: 15px;
+
+                p {
+                    line-height: 1;
+                }
+            }
+
+            .cmp-teaser__image {
+                width: 50%;
+            }
+        }
+    }
+}
