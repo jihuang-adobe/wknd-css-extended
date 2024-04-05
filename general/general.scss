@@ -54,3 +54,43 @@
         }
     }
 }
+
+.cmp-image-list-horizontal-list.image-list {
+    .cmp-image-list {
+        .cmp-image-list__item {
+            flex-basis: initial;
+            margin: 0;
+            padding-right: 0;
+            width: 100%;
+
+            .cmp-image-list__item-image-link {
+
+            }
+
+            .cmp-image-list__item-image
+            {
+                .cmp-image-list__item-content {
+                    .cmp-image-list__item-image-link {
+                        width: 25%;
+                        float: left;
+                        padding-right: 20px;
+
+                        .cmp-image__image {
+                            height: auto
+                        }
+                    }
+                    .cmp-image-list__item-title-link {
+                        display: inline-block;
+                        width: 70%;
+                    }
+                    .cmp-image-list__item-description {
+                        margin-top: 0px;
+                        width: 70%;
+                        display: inline-block;
+                        white-space: normal;
+                    }
+                }
+            }
+        }
+    }
+}
