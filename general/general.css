@@ -93,5 +93,5 @@
   line-height: 1;
 }
 .cmp-teaser--article.teaser .cmp-teaser .cmp-teaser__image {
-  width: 50%;
+  max-width: 210px;
 }
