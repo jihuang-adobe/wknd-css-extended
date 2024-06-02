@@ -168,6 +168,8 @@
     }
 }
 
-.cmp-title--center {
-    text-align: center;
+.title.cmp-title--center {
+    .cmp-title--center {
+        text-align: center;
+    }
 }
