@@ -119,3 +119,7 @@
 .cmp-content-fragment-content-only.contentfragment .cmp-contentfragment .cmp-contentfragment__elements .cmp-contentfragment__element .cmp-contentfragment__element-value p {
   line-height: normal;
 }
+
+.cmp-title--center {
+  text-align: center;
+}
