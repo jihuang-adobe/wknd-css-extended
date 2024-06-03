@@ -182,12 +182,17 @@
         row-gap: 10px;
 
         .cmp-contentfragment__element--primaryImage {
-            flex-basis: 70%;
+            flex-basis: 50%;
+        }
+
+        .cmp-contentfragment__element--itinerary {
+            flex-grow: 2;
         }
 
         .cmp-contentfragment__element {
             background-color: lightgrey;
             padding: 0px 20px;
+            flex-grow: 1;
 
             .cmp-contentfragment__element-title {
                 display: none;

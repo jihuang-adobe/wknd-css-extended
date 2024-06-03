@@ -131,11 +131,15 @@
   row-gap: 10px;
 }
 .contentfragment.cmp-contentfragment-product-specs .cmp-contentfragment__elements .cmp-contentfragment__element--primaryImage {
-  flex-basis: 70%;
+  flex-basis: 50%;
+}
+.contentfragment.cmp-contentfragment-product-specs .cmp-contentfragment__elements .cmp-contentfragment__element--itinerary {
+  flex-grow: 2;
 }
 .contentfragment.cmp-contentfragment-product-specs .cmp-contentfragment__elements .cmp-contentfragment__element {
   background-color: lightgrey;
   padding: 0px 20px;
+  flex-grow: 1;
 }
 .contentfragment.cmp-contentfragment-product-specs .cmp-contentfragment__elements .cmp-contentfragment__element .cmp-contentfragment__element-title {
   display: none;
