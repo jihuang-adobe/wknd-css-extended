@@ -140,3 +140,6 @@
 .contentfragment.cmp-contentfragment-product-specs .cmp-contentfragment__elements .cmp-contentfragment__element .cmp-contentfragment__element-title {
   display: none;
 }
+.contentfragment.cmp-contentfragment-product-specs .cmp-contentfragment__elements .cmp-contentfragment__element .cmp-contentfragment__element-value {
+  margin-inline-start: 0px;
+}
