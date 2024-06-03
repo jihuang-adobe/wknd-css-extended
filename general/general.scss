@@ -181,13 +181,13 @@
         column-gap: 10px;
         row-gap: 10px;
 
+        .cmp-contentfragment__element--primaryImage {
+            flex-basis: 70%;
+        }
+
         .cmp-contentfragment__element {
             background-color: lightgrey;
             padding: 0px 20px;
-
-            .cmp-contentfragment__element--primaryImage {
-                flex-basis: 70%;
-            }
 
             .cmp-contentfragment__element-title {
                 display: none;
