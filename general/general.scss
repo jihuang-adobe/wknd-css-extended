@@ -169,7 +169,30 @@
 }
 
 .title.cmp-title--center {
-    .cmp-title--center {
+    .cmp-title__text {
         text-align: center;
     }
+}
+
+.contentfragment.cmp-contentfragment-product-specs {
+    .cmp-contentfragment__elements {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 10px;
+        row-gap: 10px;
+
+        .cmp-contentfragment__element {
+            background-color: lightgrey;
+            padding: 0px 20px;
+
+            .cmp-contentfragment__element--primaryImage {
+                flex-basis: 70%;
+            }
+
+            .cmp-contentfragment__element-title {
+                display: none;
+            }
+        }
+    }
+
 }
