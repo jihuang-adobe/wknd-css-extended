@@ -1,3 +1,130 @@
+/*
+Teaser hero
+*/
+.cmp-teaser--hero .cmp-teaser {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+}
+.cmp-teaser--hero .cmp-teaser__image {
+  flex: 1;
+  width: 100%;
+  height: 400px;
+  max-height: 400px;
+  overflow: hidden;
+}
+.cmp-teaser--hero .cmp-teaser__image .cmp-image {
+  width: 100%;
+  height: 100%;
+}
+.cmp-teaser--hero .cmp-teaser__image .cmp-image__image {
+  margin-top: 0;
+  margin-bottom: 0;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+}
+.cmp-teaser--hero .cmp-teaser__title {
+  margin-bottom: 0em;
+}
+.cmp-teaser--hero .cmp-teaser__description {
+  margin-bottom: 0em;
+}
+.cmp-teaser--hero .cmp-teaser__description p {
+  margin-bottom: 0em;
+}
+
+/* position image from top */
+.cmp-teaser--imagetop .cmp-teaser {
+  border: 2px solid;
+}
+.cmp-teaser--imagetop .cmp-teaser .cmp-teaser__content {
+  width: auto;
+}
+.cmp-teaser--imagetop .cmp-teaser .cmp-teaser__image .cmp-image__image {
+  object-position: top;
+}
+
+.cmp-teaser--imagebottom .cmp-teaser {
+  flex-direction: column;
+  border: 2px solid;
+}
+.cmp-teaser--imagebottom .cmp-teaser .cmp-teaser__content {
+  margin: 0px;
+  width: auto;
+  padding: 15px;
+  float: none;
+  height: auto;
+  min-height: auto;
+}
+.cmp-teaser--imagebottom .cmp-teaser .cmp-teaser__image {
+  max-height: 25pc;
+}
+
+/*
+Hero Card
+*/
+.cmp-teaser--card .cmp-teaser {
+  position: relative;
+  overflow: hidden;
+  background-color: #ededed;
+}
+.cmp-teaser--card .cmp-teaser .cmp-teaser__image {
+  width: 100%;
+  overflow: hidden;
+  padding-top: 0px;
+}
+.cmp-teaser--card .cmp-teaser .cmp-teaser__image .cmp-image {
+  line-height: normal;
+  font-size: 0;
+}
+.cmp-teaser--card .cmp-teaser .cmp-teaser__image .cmp-image .cmp-image__image {
+  margin-top: 0px;
+  object-fit: cover;
+  object-position: top;
+  width: 100%;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.25s;
+  margin-bottom: 0px;
+}
+.cmp-teaser--card .cmp-teaser .cmp-teaser__content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: absolute;
+  justify-content: end;
+  padding: 0px 20px;
+}
+.cmp-teaser--card .cmp-teaser .cmp-teaser__content .cmp-teaser__title {
+  background-color: rgba(255, 255, 255, 0.65);
+  margin: 0px;
+  padding: 0px 20px;
+}
+.cmp-teaser--card .cmp-teaser .cmp-teaser__content .cmp-teaser__description {
+  background-color: rgba(255, 255, 255, 0.65);
+  line-height: normal;
+  padding: 0px 20px 10px 20px;
+}
+.cmp-teaser--card .cmp-teaser .cmp-teaser__content .cmp-teaser__action-link {
+  float: right;
+}
+.cmp-teaser--card .cmp-teaser .cmp-teaser__content .cmp-teaser__pretitle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.5em;
+  /*background: linear-gradient(to top right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 50%, #a48d01 50%, #a48d01 100%); */
+  border-bottom-left-radius: 4px;
+  box-shadow: -1px 2px 4px 1px rgba(0, 0, 0, 0.25);
+}
+
+/*
+normal stuff here
+*/
 .side-margin.container .cmp-container {
   margin-left: 10px;
   margin-right: 10px;
