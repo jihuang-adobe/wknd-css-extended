@@ -97,7 +97,8 @@ Hero Card
   height: 100%;
   position: absolute;
   justify-content: end;
-  padding: 0px 20px;
+  padding: 0px;
+  width: 100%;
 }
 .cmp-teaser--card .cmp-teaser .cmp-teaser__content .cmp-teaser__title {
   background-color: rgba(255, 255, 255, 0.65);
