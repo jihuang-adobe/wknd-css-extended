@@ -434,3 +434,36 @@ Content Fragment Extended Full
   color: #FFFFFF;
   font-size: 25px;
 }
+
+/**
+Content Fragment Extended Title
+**/
+.cmp-contentfragment-title .cmp-contentfragment .cmp-contentfragment__elements .cmp-contentfragment__element {
+  display: none;
+  padding: 20px 0px;
+  margin: 0px;
+}
+.cmp-contentfragment-title .cmp-contentfragment .cmp-contentfragment__elements .cmp-contentfragment__element .cmp-contentfragment__element-title {
+  display: none;
+}
+.cmp-contentfragment-title .cmp-contentfragment .cmp-contentfragment__elements .cmp-contentfragment__element .cmp-contentfragment__element-value {
+  margin: 0px;
+  width: 100%;
+}
+.cmp-contentfragment-title .cmp-contentfragment .cmp-contentfragment__elements .cmp-contentfragment__element .cmp-contentfragment__element-value p {
+  line-height: normal;
+}
+.cmp-contentfragment-title .cmp-contentfragment .cmp-contentfragment__elements .cmp-contentfragment__element--title {
+  display: inherit;
+}
+.cmp-contentfragment-title .cmp-contentfragment .cmp-contentfragment__elements .cmp-contentfragment__element--title .cmp-contentfragment__element-value {
+  margin: 0px;
+  margin-bottom: 13.5px;
+  margin-top: 27px;
+  font-size: 40px;
+}
+.cmp-contentfragment-title .cmp-contentfragment .cmp-contentfragment__elements .cmp-contentfragment__element--title .cmp-contentfragment__element-valueafter {
+  border-bottom: 2px solid #ffea00;
+  padding-top: 8px;
+  width: 84px;
+}

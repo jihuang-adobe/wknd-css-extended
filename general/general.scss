@@ -575,3 +575,49 @@ Content Fragment Extended Full
         }
     }
 }
+
+/**
+Content Fragment Extended Title
+**/
+
+.cmp-contentfragment-title {
+    .cmp-contentfragment {
+        .cmp-contentfragment__elements {
+            .cmp-contentfragment__element {
+                display: none;
+                padding: 20px 0px;
+                margin: 0px;
+    
+                .cmp-contentfragment__element-title {
+                    display: none;
+                }
+
+                .cmp-contentfragment__element-value {
+                    margin: 0px;
+                    width: 100%;
+
+                    p {
+                        line-height: normal;
+                    }
+                }
+            }
+
+            .cmp-contentfragment__element--title {
+                display: inherit;
+
+                .cmp-contentfragment__element-value {
+                    margin: 0px;
+                    margin-bottom: 13.5px;
+                    margin-top: 27px;
+                    font-size: 40px;
+    
+                    &after {
+                        border-bottom: 2px solid #ffea00;
+                        padding-top: 8px;
+                        width: 84px;
+                    }
+                }
+            }
+        }
+    }
+}
