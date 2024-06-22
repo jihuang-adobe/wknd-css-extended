@@ -274,3 +274,162 @@ normal stuff here
 .contentfragment.cmp-contentfragment-product-specs .cmp-contentfragment__elements .cmp-contentfragment__element .cmp-contentfragment__element-value {
   margin-inline-start: 0px;
 }
+
+/**
+Content Fragment Extended Teaser
+**/
+.cmp-contentfragment-featured .cmp-contentfragment .cmp-contentfragment__elements {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.cmp-contentfragment-featured .cmp-contentfragment .cmp-contentfragment__elements .cmp-contentfragment__element {
+  display: none;
+}
+.cmp-contentfragment-featured .cmp-contentfragment .cmp-contentfragment__elements .cmp-contentfragment__element .cmp-contentfragment__element-title {
+  display: none;
+}
+.cmp-contentfragment-featured .cmp-contentfragment .cmp-contentfragment__elements .cmp-contentfragment__element .cmp-contentfragment__element-value {
+  margin: 0px;
+  width: 100%;
+}
+.cmp-contentfragment-featured .cmp-contentfragment .cmp-contentfragment__elements .cmp-contentfragment__element .cmp-contentfragment__element-value p {
+  line-height: normal;
+}
+.cmp-contentfragment-featured .cmp-contentfragment .cmp-contentfragment__elements .cmp-contentfragment__element--title {
+  display: inherit;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: rgba(3, 3, 3, 0.75);
+  padding: 20px 20px;
+  color: #FFFFFF;
+  font-size: 25px;
+}
+.cmp-contentfragment-featured .cmp-contentfragment .cmp-contentfragment__elements .cmp-contentfragment__element--description {
+  display: inherit;
+  flex-basis: 50%;
+  background-color: rgb(240, 240, 240);
+  padding: 20px 20px;
+}
+.cmp-contentfragment-featured .cmp-contentfragment .cmp-contentfragment__elements .cmp-contentfragment__element--primaryImage {
+  display: inherit;
+  flex-basis: 80%;
+}
+.cmp-contentfragment-featured .cmp-contentfragment .cmp-contentfragment__elements .cmp-contentfragment__element--primaryImage img {
+  width: 100%;
+}
+
+/**
+Content Fragment Extended Card
+**/
+.cmp-contentfragment-card .cmp-contentfragment .cmp-contentfragment__elements {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.cmp-contentfragment-card .cmp-contentfragment .cmp-contentfragment__elements .cmp-contentfragment__element {
+  display: none;
+}
+.cmp-contentfragment-card .cmp-contentfragment .cmp-contentfragment__elements .cmp-contentfragment__element .cmp-contentfragment__element-title {
+  display: none;
+}
+.cmp-contentfragment-card .cmp-contentfragment .cmp-contentfragment__elements .cmp-contentfragment__element .cmp-contentfragment__element-value {
+  margin: 0px;
+  width: 100%;
+}
+.cmp-contentfragment-card .cmp-contentfragment .cmp-contentfragment__elements .cmp-contentfragment__element .cmp-contentfragment__element-value p {
+  line-height: normal;
+}
+.cmp-contentfragment-card .cmp-contentfragment .cmp-contentfragment__elements .cmp-contentfragment__element--title {
+  display: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(3, 3, 3, 0.75);
+  padding: 20px 20px;
+  color: #FFFFFF;
+  font-size: 25px;
+}
+.cmp-contentfragment-card .cmp-contentfragment .cmp-contentfragment__elements .cmp-contentfragment__element--description {
+  display: inherit;
+  background-color: rgba(3, 3, 3, 0.75);
+  padding: 20px 20px;
+  position: absolute;
+  bottom: 0;
+  color: #FFFFFF;
+}
+.cmp-contentfragment-card .cmp-contentfragment .cmp-contentfragment__elements .cmp-contentfragment__element--primaryImage {
+  display: inherit;
+}
+.cmp-contentfragment-card .cmp-contentfragment .cmp-contentfragment__elements .cmp-contentfragment__element--price {
+  display: inherit;
+  background-color: rgba(3, 3, 3, 0.75);
+  padding: 20px 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #FFFFFF;
+  font-size: 25px;
+}
+
+/**
+Content Fragment Extended Full
+**/
+.cmp-contentfragment-full .cmp-contentfragment .cmp-contentfragment__elements {
+  display: flex;
+  align-items: center;
+  position: relative;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.cmp-contentfragment-full .cmp-contentfragment .cmp-contentfragment__elements .cmp-contentfragment__element {
+  display: none;
+  background-color: rgb(240, 240, 240);
+  padding: 20px 20px;
+  margin: 0px 5px;
+}
+.cmp-contentfragment-full .cmp-contentfragment .cmp-contentfragment__elements .cmp-contentfragment__element .cmp-contentfragment__element-title {
+  display: none;
+}
+.cmp-contentfragment-full .cmp-contentfragment .cmp-contentfragment__elements .cmp-contentfragment__element .cmp-contentfragment__element-value {
+  margin: 0px;
+  width: 100%;
+}
+.cmp-contentfragment-full .cmp-contentfragment .cmp-contentfragment__elements .cmp-contentfragment__element .cmp-contentfragment__element-value p {
+  line-height: normal;
+}
+.cmp-contentfragment-full .cmp-contentfragment .cmp-contentfragment__elements .cmp-contentfragment__element--description, .cmp-contentfragment-full .cmp-contentfragment .cmp-contentfragment__elements .cmp-contentfragment__element--itinerary, .cmp-contentfragment-full .cmp-contentfragment .cmp-contentfragment__elements .cmp-contentfragment__element--gearList {
+  display: inherit;
+  flex-basis: 29%;
+  max-height: 500px;
+  overflow: auto;
+}
+.cmp-contentfragment-full .cmp-contentfragment .cmp-contentfragment__elements .cmp-contentfragment__element--title {
+  display: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(3, 3, 3, 0.75);
+  padding: 20px 20px;
+  color: #FFFFFF;
+  font-size: 25px;
+}
+.cmp-contentfragment-full .cmp-contentfragment .cmp-contentfragment__elements .cmp-contentfragment__element--primaryImage {
+  padding: 0px;
+  margin: 0px;
+  display: inherit;
+  order: -1;
+  flex-basis: 100%;
+}
+.cmp-contentfragment-full .cmp-contentfragment .cmp-contentfragment__elements .cmp-contentfragment__element--price {
+  display: inherit;
+  background-color: rgba(3, 3, 3, 0.75);
+  padding: 20px 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #FFFFFF;
+  font-size: 25px;
+}
