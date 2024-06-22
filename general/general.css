@@ -462,7 +462,7 @@ Content Fragment Extended Title
   margin-top: 27px;
   font-size: 40px;
 }
-.cmp-contentfragment-title .cmp-contentfragment .cmp-contentfragment__elements .cmp-contentfragment__element--title .cmp-contentfragment__element-valueafter {
+.cmp-contentfragment-title .cmp-contentfragment .cmp-contentfragment__elements .cmp-contentfragment__element--title .cmp-contentfragment__element-value:after {
   border-bottom: 2px solid #ffea00;
   padding-top: 8px;
   width: 84px;
