@@ -1,6 +1,10 @@
 /*
 Teaser hero
 */
+.teaser.cmp-teaser.cmp-teaser--featured.cmp-teaser--featured-reverse {
+  flex-flow: row;
+}
+
 .cmp-teaser--hero .cmp-teaser {
   display: flex;
   align-items: center;
