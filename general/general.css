@@ -1,7 +1,7 @@
 /*
 Teaser hero
 */
-.teaser.cmp-teaser.cmp-teaser--featured.cmp-teaser--featured--reversed {
+.teaser.cmp-teaser--featured.cmp-teaser--featured--reversed .cmp-teaser {
   flex-flow: row;
 }
 

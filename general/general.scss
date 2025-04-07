@@ -5,8 +5,10 @@ Teaser hero
 $desktop-max-height: 640px;
 $mobile-max-height: 400px;
 
-.teaser.cmp-teaser.cmp-teaser--featured.cmp-teaser--featured--reversed {
-    flex-flow: row;
+.teaser.cmp-teaser--featured.cmp-teaser--featured--reversed {
+    .cmp-teaser {
+        flex-flow: row;
+    }
 }
 
 .cmp-teaser--hero {
