@@ -52,7 +52,6 @@ $mobile-max-height: 400px;
 /* position image from top */
 .cmp-teaser--imagetop {
     .cmp-teaser {
-        border: 2px solid;
 
         .cmp-teaser__content {
             width: auto;
@@ -69,7 +68,6 @@ $mobile-max-height: 400px;
 .cmp-teaser--imagebottom {
     .cmp-teaser {
         flex-direction: column;
-        border: 2px solid;
 
         .cmp-teaser__content {
             margin: 0px;

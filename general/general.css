@@ -37,9 +37,6 @@ Teaser hero
 }
 
 /* position image from top */
-.cmp-teaser--imagetop .cmp-teaser {
-  border: 2px solid;
-}
 .cmp-teaser--imagetop .cmp-teaser .cmp-teaser__content {
   width: auto;
 }
@@ -49,7 +46,6 @@ Teaser hero
 
 .cmp-teaser--imagebottom .cmp-teaser {
   flex-direction: column;
-  border: 2px solid;
 }
 .cmp-teaser--imagebottom .cmp-teaser .cmp-teaser__content {
   margin: 0px;
