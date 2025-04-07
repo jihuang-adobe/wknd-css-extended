@@ -467,3 +467,12 @@ Content Fragment Extended Title
   padding-top: 8px;
   width: 84px;
 }
+
+/**
+Button
+**/
+.button.cmp-button--center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
