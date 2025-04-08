@@ -124,8 +124,18 @@ Hero Card
 }
 
 /*
+Product carousel
+*/
+/*
 normal stuff here
 */
+.productcarousel .productcarousel__container .productcarousel__cardscontainer {
+  flex-wrap: wrap;
+}
+.productcarousel .productcarousel__container .productcarousel__cardscontainer .card .product__card-actions {
+  width: 100%;
+}
+
 .side-margin.container .cmp-container {
   margin-left: 10px;
   margin-right: 10px;

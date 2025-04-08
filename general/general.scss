@@ -169,8 +169,27 @@ $teaser-img-height: $teaser-height;
 }
 
 /*
+Product carousel
+*/
+
+
+
+/*
 normal stuff here
 */
+.productcarousel {
+    .productcarousel__container {
+        .productcarousel__cardscontainer {
+            flex-wrap: wrap;
+
+            .card {
+                .product__card-actions {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
 
 .side-margin.container {
     .cmp-container {
