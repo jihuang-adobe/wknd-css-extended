@@ -394,10 +394,10 @@ Content Fragment Extended Full
   position: relative;
   flex-wrap: wrap;
   justify-content: center;
+  background-color: rgb(240, 240, 240);
 }
 .cmp-contentfragment-full .cmp-contentfragment .cmp-contentfragment__elements .cmp-contentfragment__element {
   display: none;
-  background-color: rgb(240, 240, 240);
   padding: 20px 20px;
   margin: 0px 5px;
 }
@@ -407,6 +407,7 @@ Content Fragment Extended Full
 .cmp-contentfragment-full .cmp-contentfragment .cmp-contentfragment__elements .cmp-contentfragment__element .cmp-contentfragment__element-value {
   margin: 0px;
   width: 100%;
+  display: flex;
 }
 .cmp-contentfragment-full .cmp-contentfragment .cmp-contentfragment__elements .cmp-contentfragment__element .cmp-contentfragment__element-value p {
   line-height: normal;

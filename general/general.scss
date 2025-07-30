@@ -537,10 +537,10 @@ Content Fragment Extended Full
             position: relative;
             flex-wrap: wrap;
             justify-content: center;
+            background-color: rgba(240, 240, 240, 1);
     
             .cmp-contentfragment__element {
                 display: none;
-                background-color: rgba(240, 240, 240, 1);
                 padding: 20px 20px;
                 margin: 0px 5px;
     
@@ -551,6 +551,7 @@ Content Fragment Extended Full
                 .cmp-contentfragment__element-value {
                     margin: 0px;
                     width: 100%;
+                    display: flex;
 
                     p {
                         line-height: normal;
