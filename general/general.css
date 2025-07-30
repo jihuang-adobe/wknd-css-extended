@@ -293,6 +293,7 @@ Content Fragment Extended Teaser
   display: flex;
   align-items: center;
   position: relative;
+  background-color: rgb(240, 240, 240);
 }
 .cmp-contentfragment-featured .cmp-contentfragment .cmp-contentfragment__elements .cmp-contentfragment__element {
   display: none;
@@ -303,6 +304,7 @@ Content Fragment Extended Teaser
 .cmp-contentfragment-featured .cmp-contentfragment .cmp-contentfragment__elements .cmp-contentfragment__element .cmp-contentfragment__element-value {
   margin: 0px;
   width: 100%;
+  display: grid;
 }
 .cmp-contentfragment-featured .cmp-contentfragment .cmp-contentfragment__elements .cmp-contentfragment__element .cmp-contentfragment__element-value p {
   line-height: normal;
@@ -320,7 +322,6 @@ Content Fragment Extended Teaser
 .cmp-contentfragment-featured .cmp-contentfragment .cmp-contentfragment__elements .cmp-contentfragment__element--description {
   display: inherit;
   flex-basis: 50%;
-  background-color: rgb(240, 240, 240);
   padding: 20px 20px;
 }
 .cmp-contentfragment-featured .cmp-contentfragment .cmp-contentfragment__elements .cmp-contentfragment__element--primaryImage {
@@ -394,10 +395,10 @@ Content Fragment Extended Full
   position: relative;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: rgb(240, 240, 240);
 }
 .cmp-contentfragment-full .cmp-contentfragment .cmp-contentfragment__elements .cmp-contentfragment__element {
   display: none;
+  background-color: rgb(240, 240, 240);
   padding: 20px 20px;
   margin: 0px 5px;
 }
@@ -407,7 +408,6 @@ Content Fragment Extended Full
 .cmp-contentfragment-full .cmp-contentfragment .cmp-contentfragment__elements .cmp-contentfragment__element .cmp-contentfragment__element-value {
   margin: 0px;
   width: 100%;
-  display: flex;
 }
 .cmp-contentfragment-full .cmp-contentfragment .cmp-contentfragment__elements .cmp-contentfragment__element .cmp-contentfragment__element-value p {
   line-height: normal;
