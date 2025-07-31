@@ -374,6 +374,7 @@ Content Fragment Extended Card
 }
 .cmp-contentfragment-card .cmp-contentfragment .cmp-contentfragment__elements .cmp-contentfragment__element--primaryImage {
   display: inherit;
+  width: 100%;
 }
 .cmp-contentfragment-card .cmp-contentfragment .cmp-contentfragment__elements .cmp-contentfragment__element--price {
   display: inherit;
