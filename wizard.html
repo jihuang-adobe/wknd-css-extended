@@ -50,7 +50,7 @@
 
                         const tabElementImage = item.asset ? `<img style="width:100%" src="${item.asset._authorUrl}" />` : '';
                         tabsElementHTML += jsx`
-                            <div id="step-${stepCount}" data-aue-resource="urn:aemconnection:${item._path}" data-aue-type="${item._typename}" class="tab-pane" role="tabpanel" aria-labelledby="step-${stepCount}">
+                            <div id="step-${stepCount}" data-aue-resource="urn:aemconnection:${item._path}" data-aue-type="${item.__typename}" class="tab-pane" role="tabpanel" aria-labelledby="step-${stepCount}">
                                 ${tabElementImage}
                                 ${item.description.html}
                             </div>
