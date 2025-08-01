@@ -6,6 +6,12 @@
         <script src="https://cdn.jsdelivr.net/npm/smartwizard@6/dist/js/jquery.smartWizard.min.js" type="text/javascript"></script>
         <script src="https://universal-editor-service.adobe.io/cors.js" async></script>
         <meta name="urn:adobe:aue:system:aemconnection" content="aem:https://author-p7716-e868301.adobeaemcloud.com">
+        <style>
+            #smartwizard {
+                margin-left: 10%;
+                margin-right: 10%;
+            }
+        </style>
         <script>
             function jsx(html, ...args) {
                 return html.slice(1).reduce((str, elem, i) => str + args[i] + elem, html[0]);
