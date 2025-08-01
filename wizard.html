@@ -19,6 +19,8 @@
                     const id = 'smartwizard';
                     const mainElement = document.createElement('div');
                     mainElement.id = id;
+                    mainElement.setAttribute('data-aue-resource', 'urn:aemconnection:' + response.data.screen.body[0]._path);
+                    mainElement.setAttribute('data-aue-type', 'data-aue-type=' + response.data.screen.body[0].__typename);
 
                     var navsElmentHTML = '';
                     var tabsElementHTML = '';
