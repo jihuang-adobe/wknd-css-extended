@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title>wizard</title>
+        <link href="https://cdn.jsdelivr.net/npm/smartwizard@6/dist/css/smart_wizard_all.min.css" rel="stylesheet" type="text/css" />
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/smartwizard@6/dist/js/jquery.smartWizard.min.js" type="text/javascript"></script>
+        <script>
+            function jsx(html, ...args) {
+                return html.slice(1).reduce((str, elem, i) => str + args[i] + elem, html[0]);
+            }
+
+            $(function() {
+                $.ajax({
+                    type: 'GET',
+                    url: 'https://prod-17.westus.logic.azure.com:443/workflows/a559ec71ae98424a9eca24696c7d61ad/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=S-JNYb9X7TBijrTCBF0RaXx7hnn6i9klkaEQ8OHfxkA'
+                }).done(function(response) {
+                    const id = 'smartwizard';
+                    const mainElement = document.createElement('div');
+                    mainElement.id = id;
+
+                    var navsElmentHTML = '';
+                    var tabsElementHTML = '';
+
+                    const progressElement = document.createElement('div');
+                    progressElement.classList.add('progress');
+                    progressElement.innerHTML = jsx`
+                        <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                    `;
+
+                    const navsElement = document.createElement('ul');
+                    navsElement.classList.add('nav');
+
+                    const tabsElement = document.createElement('div');
+                    tabsElement.classList.add('tab-content');
+
+                    response.data.screen.body[0].block.forEach(function(item, index){
+                        console.log(item);
+                        var stepCount = index + 1;
+
+                        navsElmentHTML += jsx`
+                            <li class="nav-item">
+                                <a class="nav-link" href="#step-${stepCount}">
+                                    <span class="num">${stepCount}</span>
+                                    ${item.title}
+                                </a>
+                            </li>
+                        `;
+
+                        const tabElementImage = item.asset ? `<img style="width:100%" src="${item.asset._authorUrl}" />` : '';
+                        tabsElementHTML += jsx`
+                            <div id="step-${stepCount}" class="tab-pane" role="tabpanel" aria-labelledby="step-${stepCount}">
+                                ${tabElementImage}
+                                ${item.description.html}
+                            </div>
+                        `;
+                    });
+
+                    navsElement.innerHTML = navsElmentHTML;
+                    tabsElement.innerHTML = tabsElementHTML;
+                    
+                    mainElement.append(navsElement);
+                    mainElement.append(progressElement);
+                    mainElement.append(tabsElement);
+
+                    document.body.appendChild(mainElement);
+
+                    // SmartWizard initialize
+                    $('#'+id).smartWizard();
+                });
+            });
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
