@@ -19,7 +19,7 @@
                     const id = 'smartwizard';
                     const mainElement = document.createElement('div');
                     mainElement.id = id;
-                    mainElement.setAttribute('data-aue-resource', 'urn:aemconnection:' + response.data.screen.body[0]._path);
+                    mainElement.setAttribute('data-aue-resource', 'urn:aemconnection:' + response.data.screen.body[0]._path + '/jcr:content/data/master');
                     mainElement.setAttribute('data-aue-type', response.data.screen.body[0].__typename);
 
                     var navsElmentHTML = '';
@@ -52,7 +52,7 @@
 
                         const tabElementImage = item.asset ? `<img style="width:100%" src="${item.asset._authorUrl}" />` : '';
                         tabsElementHTML += jsx`
-                            <div id="step-${stepCount}" data-aue-resource="urn:aemconnection:${item._path}" data-aue-type="${item.__typename}" class="tab-pane" role="tabpanel" aria-labelledby="step-${stepCount}">
+                            <div id="step-${stepCount}" data-aue-resource="urn:aemconnection:${item._path}/jcr:content/data/master" data-aue-type="${item.__typename}" class="tab-pane" role="tabpanel" aria-labelledby="step-${stepCount}">
                                 ${tabElementImage}
                                 ${item.description.html}
                             </div>
