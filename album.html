@@ -283,17 +283,27 @@
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              <div class="input-group mb-3">
-                <span class="input-group-text bg-warning-subtle" id="basic-aem-author-url">AEM Author URL</span>
-                <input type="text" class="form-control" id="input-aem-author-url" placeholder="https://author-p7716-e868301.adobeaemcloud.com" aria-label="AEM Author URL" aria-describedby="basic-aem-author-url">
+              <div class="mb-3">
+                <label for="input-aem-author-url"" class="form-label">AEM Author URL</label>
+                <input type="email" class="form-control" id="input-aem-author-url"" placeholder="https://author-p7716-e868301.adobeaemcloud.com">
               </div>
-              <div class="input-group mb-3">
-                <span class="input-group-text bg-warning-subtle" id="basic-aem-content-fragment-folder-path">Content Fragment Folder Path</span>
-                <input type="text" class="form-control" id="input-aem-content-fragment-folder-path" placeholder="/content/dam/wknd-universal/en/fragments/promotions" aria-label="AEM Content Fragment Folder Path" aria-describedby="basic-aem-content-fragment-folder-path">
+              <div class="mb-3">
+                <label for="input-aem-content-fragment-folder-path" class="form-label">Content Fragment Folder Path</label>
+                <div class="input-group">
+                  <input type="email" class="form-control" id="input-aem-content-fragment-folder-path" placeholder="/content/dam/wknd-universal/en/fragments/promotions">
+                  <div class="input-group-append">
+                    <button type="button" class="btn btn-secondary">Select</button>
+                  </div>
+                </div>
               </div>
-              <div class="input-group mb-3">
-                <span class="input-group-text bg-warning-subtle" id="basic-aem-image-folder-path">Image Folder Path</span>
-                <input type="text" class="form-control" id="input-aem-image-folder-path" placeholder="/dam/wknd-universal/en/adventures" aria-label="AEM Image Folder Path" aria-describedby="basic-aem-image-folder-path">
+              <div class="mb-3">
+                <label for="input-aem-image-folder-path" class="form-label">Image Folder Path</label>
+                <div class="input-group">
+                  <input type="email" class="form-control" id="input-aem-image-folder-path" placeholder="/dam/wknd-universal/en/adventures">
+                  <div class="input-group-append">
+                    <button type="button" class="btn btn-secondary">Select</button>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="modal-footer">
