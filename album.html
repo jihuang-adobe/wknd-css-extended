@@ -27,6 +27,8 @@
           localStorage.setItem(key, document.getElementById(value).value);
           //console.log(`${key}: ${value}`);
         });
+
+        loadConfig();
       }
 
       function loadConfigInModal() {
@@ -44,13 +46,22 @@
         configObj['aem-image-folder-path'] = localStorage.getItem('aem-image-folder-path');
 
         document.querySelector('meta[name="urn:adobe:aue:system:aemconnection"]').content = 'aem:' + localStorage.getItem('aem-author-url');
+
+        renderCarousel();
+
+        renderAlbum();
       }
 
       function jsx(html, ...args) {
         return html.slice(1).reduce((str, elem, i) => str + args[i] + elem, html[0]);
       }
 
-      function renderAlbum(AEMURL, AEMImageFolderPath) {
+      function renderAlbum() {
+        const AEMURL = configObj['aem-author-url'];
+        const AEMImageFolderPath = configObj['aem-image-folder-path'];
+        const targetDOM = document.querySelector('.album .container .row');
+        targetDOM.innerHTML = '';
+
         if(!AEMURL) {
           return;
         }
@@ -59,7 +70,7 @@
           return;
         }
 
-        const sourceUrl = AEMURL + AEMImageFolderPath.replace('/dam/', '/api/assets/') + '.json';
+        const sourceUrl = AEMURL + AEMImageFolderPath.replace('/content/dam/', '/api/assets/') + '.json';
 
         fetch(sourceUrl, {
           method: 'GET',
@@ -93,14 +104,19 @@
             `;
           });
 
-          document.querySelector('.album .container .row').innerHTML = albumHTML;
+          targetDOM.innerHTML = albumHTML;
         })
         .catch(error => {
           console.error('Error fetching data:', error);
         });
       }
 
-      function renderCarousel(AEMURL, AEMContentFragmentFolderPath) {
+      function renderCarousel() {
+        const AEMURL = configObj['aem-author-url'];
+        const AEMContentFragmentFolderPath = configObj['aem-content-fragment-folder-path'];
+        const targetDOM = document.querySelector('main section');
+        targetDOM.innerHTML = '';
+
         if(!AEMURL) {
           return;
         }
@@ -172,7 +188,7 @@
 
           carouselHTML += '</div>';
 
-          document.querySelector('main section').innerHTML = carouselHTML;
+          targetDOM.innerHTML = carouselHTML;
         })
         .catch(error => {
           console.error('Error fetching data:', error);
@@ -180,15 +196,11 @@
       }
 
       document.addEventListener('DOMContentLoaded', () => {
-        loadConfigInModal();
-
         document.getElementById('configModal').addEventListener('show.bs.modal', event => {
           loadConfigInModal();
-        })
+        });
 
-        renderCarousel(configObj['aem-author-url'], configObj['aem-content-fragment-folder-path']);
-
-        renderAlbum(configObj['aem-author-url'], configObj['aem-image-folder-path']);
+        loadConfigInModal();
       });
     </script>
   </head>
