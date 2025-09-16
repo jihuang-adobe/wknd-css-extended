@@ -89,19 +89,41 @@
           var albumHTML = '';
 
           data.entities.forEach(function(entity, index) {
-            albumHTML += jsx`
-              <div class="col">
-                <div class="card shadow-sm">
-                  <img class="bd-placeholder-img card-img-top" src="${entity.links[1].href}">
-                  <div class="card-body">
-                    <p class="card-text">${entity.properties.name}</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                      <small class="text-body-secondary">${entity.properties.metadata['dc:format']}</small>
+
+            switch(entity.properties.metadata['dc:format']) {
+              case 'video/mp4':
+                albumHTML += jsx`
+                  <div class="col">
+                    <div class="card shadow-sm">
+                      <video controls>
+                        <source src="${entity.links[1].href}" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                      <div class="card-body">
+                        <p class="card-text">${entity.properties.name}</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <small class="text-body-secondary">${entity.properties.metadata['dc:format']}</small>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </div>
-            `;
+                `;
+                break;
+              default:
+                albumHTML += jsx`
+                  <div class="col">
+                    <div class="card shadow-sm">
+                      <img class="bd-placeholder-img card-img-top" src="${entity.links[1].href}">
+                      <div class="card-body">
+                        <p class="card-text">${entity.properties.name}</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <small class="text-body-secondary">${entity.properties.metadata['dc:format']}</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                `;
+            }
           });
 
           targetDOM.innerHTML = albumHTML;
