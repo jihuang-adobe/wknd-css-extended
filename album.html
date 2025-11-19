@@ -184,6 +184,8 @@
               <div class="carousel-item ${cssClass}" data-aue-type="${item.__typename}" data-aue-resource="urn:aemconnection:${item._path}/jcr:content/data/${item._variation}">
                 <img src="${item.bannerimage._authorUrl}" class="d-block w-100" alt="${item.title}">
                 <div class="carousel-caption bg-dark bg-opacity-75 d-none d-md-block">
+                  <h3>${item.title}</h3>
+                  <hr />
                   <h5>${item.subtitle}</h5>
                   <p>${item.description.plaintext}</p>
                 </div>
