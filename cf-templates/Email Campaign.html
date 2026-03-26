@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html  lang="en">
+	<head>
+		<meta charset="utf-8" >
+		<title>Email Campaign</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="custom" content="MzQyMTM2" id="snextras">
+		<link rel="icon" href="i/favicon-default.png">
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@100;200;300;400;500;600;700;800;900&family=DM+Sans:wght@100;200;300;400;500;600;700;800;900&subset=latin&display=swap" rel="stylesheet" id="sf-google-fonts">
+		<!-- Startup CSS + Bootstrap CSS (Styles for all blocks) - Remove ".min" if you want to edit a css code -->
+		<link href="https://designmodo.com/startup/app/pub/342136/843009b7163c62a1b03bbf9b64389018/styles/css/styles.min.css?v=1770868918" rel="stylesheet" id="sf-custom-css" />
+	</head> 
+	<body>
+	<header class="py-20 bg-bg-3 text-center">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-xl-10">
+					<h1 class="display-4">{{{fields.title}}}</h1>
+					<h2>{{{fields.subtitle}}}</h2>
+					<div>
+					<hr>
+					</div>
+					<div class="fs-1">
+						{{{fields.description}}}
+					</div>
+					<br>
+					<a href="{{{fields.ctaurl}}}#" class="btn btn-action-1">{{{fields.ctalabel}}}</a>
+					<br>
+					<br>
+				</div>
+				<div class="col-xl-10">
+					{{{asset fields.bannerimage class="img-fluid"}}}
+				</div>
+			</div>
+		</div>
+	</header>
+</body>
+</html>

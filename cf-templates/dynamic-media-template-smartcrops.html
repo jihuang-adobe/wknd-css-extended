@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dynamic Media Template SmartCrops</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://jihuang-adobe.github.io/wknd-css-extended/cf-templates/dynamic-media-template-smartcrops.js"></script>
+    <script>
+      const DM_TEMPLATE_CROP_SIZE_MAPPING = {
+        'xSmall': 'https://smartimaging.scene7.com/is/image/DynamicMediaNA/200x200 template',
+        'Small': 'https://smartimaging.scene7.com/is/image/DynamicMediaNA/400x400 template',
+        'Medium': 'https://smartimaging.scene7.com/is/image/DynamicMediaNA/700x525 template',
+        'Large': 'https://smartimaging.scene7.com/is/image/DynamicMediaNA/1260x720 template'
+      };
+      start('{{{properties.path}}}', DM_TEMPLATE_CROP_SIZE_MAPPING);
+    </script>
+  </head>
+  <body>
+  </body>
+</html>

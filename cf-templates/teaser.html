@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Template</title>
+  <script>
+    // workaround for styles.css, and only that, not work
+    const stylesheets = ['https://main--refdemoeds--aemxsc.aem.page/styles/styles.css', 'https://main--refdemoeds--aemxsc.aem.page/blocks/content-fragment/content-fragment.css'];
+    for (const stylesheet of stylesheets) {
+      var newLink = document.createElement('link');
+      newLink.rel = 'stylesheet'; // Defines the relationship to the document
+      newLink.href = stylesheet; // Specifies the URL of the external resource
+      newLink.type = 'text/css'; // Optional: defines the type of content
+      document.head.appendChild(newLink);
+    }
+  </script>
+</head>
+<body class="appear">
+  <main>
+    <div class="section content-fragment-container">
+      <div class="content-fragment-wrapper">
+        <div class="content-fragment block">
+          <div class="banner-content block image-right">
+            <div style="display:none" class="raw-image">
+              {{{fields.bannerimage}}}
+            </div>
+            <div class="banner-detail ">
+              <p data-aue-prop="title" data-aue-label="Title" data-aue-type="text" class="cftitle">{{{fields.title}}}</p>
+              <p data-aue-prop="subtitle" data-aue-label="SubTitle" data-aue-type="text" class="cfsubtitle">{{{fields.subtitle}}}</p>
+              <div class="cfdescription">
+                {{{fields.description}}}
+              </div>
+              <p class="button-container cta-button">
+                <a href="{{{fields.ctaurl}}}#" data-aue-prop="ctaUrl" data-aue-label="Button Link/URL" data-aue-type="reference" target="_blank" rel="noopener" data-aue-filter="page" class="button">
+                  <span data-aue-prop="ctalabel" data-aue-label="Button Label" data-aue-type="text">{{{fields.ctalabel}}}</span>
+                </a>
+              </p>
+            </div>
+            <div class="banner-logo">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script>
+    const hiddenImageElement = document.querySelector('.raw-image img');
+    //const blob = new Blob([hiddenImageElement.src], { type: 'image/jpeg' });
+    //const objectUrl = URL.createObjectURL(hiddenImageElement.src);
+    const imageElement = document.querySelector('.banner-content');
+    imageElement.style.backgroundImage = `url(${hiddenImageElement.src})`;
+  </script>
+</body>
+</html>

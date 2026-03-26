@@ -11,14 +11,16 @@ async function start(CFPath, DM_TEMPLATE_CROP_SIZE_MAPPING) {
     const variationname = new URLSearchParams(hash.split('?')[1]).get('variation');
     const contentPath = CFPath;
 
+    const sessionToken = JSON.parse(sessionStorage.getItem('adobeid_ims_access_token/exc_app/false/AdobeID,ab.manage,account_cluster.read,accounts.read,additional_info,additional_info.job_function,additional_info.projectedProductContext,additional_info.roles,adobeio.appregistry.read,adobeio_api,aem.frontend.all,audiencemanager_api,creative_cloud,mps,openid,org.read,pps.read,read_organizations,read_pc,read_pc.acp,read_pc.dma_tartan,service_principals.write,session'));
+
     const CONFIG = {
         GRAPHQL_QUERY: '/graphql/execute.json/ref-demo-eds/CTAByPath'
     };
-
+    
     const requestConfig = {
         url: `https://${aemauthorurl}${CONFIG.GRAPHQL_QUERY};path=${contentPath};variation=${variationname};ts=${Date.now()}`,
         method: 'GET',
-        headers: { 'Content-Type': 'application/json' }
+        headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${sessionToken.tokenValue}` }
     };
 
     try {
@@ -26,8 +28,7 @@ async function start(CFPath, DM_TEMPLATE_CROP_SIZE_MAPPING) {
     const response = await fetch(requestConfig.url, {
         method: requestConfig.method,
         headers: requestConfig.headers,
-        ...(requestConfig.body && { body: requestConfig.body }),
-        credentials: 'include'
+        ...(requestConfig.body && { body: requestConfig.body })
     });
 
     if (!response.ok) {
@@ -88,7 +89,7 @@ async function start(CFPath, DM_TEMPLATE_CROP_SIZE_MAPPING) {
                         <h3>${crop.name}</h3>
                         <img src="${DM_TEMPLATE_CROP_SIZE_MAPPING[crop.name]}?$image=is(${dmS7UrlParsed}:${crop.name})&$title=${title}&$description=${description}&ts=${Date.now()}" alt="${crop.name}">
                         <div class="input-group mt-3">
-                            <button class="btn btn-outline-secondary" type="button">Copy URL</button>
+                            <button class="btn btn-outline-secondary" type="button" onclick="navigator.clipboard.writeText(this.nextElementSibling.value)">Copy URL</button>
                             <input class="form-control" type="text" value="${DM_TEMPLATE_CROP_SIZE_MAPPING[crop.name]}?$image=is(${dmS7UrlParsed}:${crop.name})&$title=${title}&$description=${description}&ts=${Date.now()}" disabled readonly>
                         </div>
                         <hr>
